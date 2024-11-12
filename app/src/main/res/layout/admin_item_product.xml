@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/productImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/flower"
+            android:contentDescription="@string/product_image"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toBottomOf="@id/productName"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toBottomOf="@id/productPrice"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Category: Category 1"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toBottomOf="@id/productDescription"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---------------"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toBottomOf="@id/productCategory"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/productStock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stock: 50"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/productImage"
+            app:layout_constraintTop_toBottomOf="@id/productBrand"
+            app:layout_constraintEnd_toStartOf="@id/actionButtons" />
+
+        <LinearLayout
+            android:id="@+id/actionButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editButton"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:icon="@drawable/ic_edit"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/visibilityButton"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_eye_on"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">FleursOnTheGo</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="fleurs_on_the_go">Fleurs on the Go</string>
+    <string name="get_the_best_deal_on">Get the best deal on</string>
+    <string name="get_started">Get Started</string>
+    <string name="todo">TODO</string>
+    <string name="image">TODO</string>
+    <string name="fresh_and_vibrant_flowers">Fresh and Vibrant Flowers</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="_1">1</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="_2">2</string>
+    <string name="enter_otp_sent_to_your_phone_number">Enter OTP Sent to Your Phone Number</string>
+    <string name="otp">OTP</string>
+    <string name="next">Next</string>
+    <string name="resend_otp_in_00_30">Resend OTP in 00:30</string>
+    <string name="_3">3</string>
+    <string name="set_your_credentials">Set your credentials</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="finish_up_by_inputting_your_credentials">Finish up by inputting your credentials</string>
+    <string name="confirm_passwords">Confirm Password</string>
+    <string name="the_otp_has_been_sent_to_your_phone_number">"The OTP has been sent to your phone number: "</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+    <string name="messages">Messages</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="bouquets">Bouquets</string>
+    <string name="see_all">See all</string>
+    <string name="_0">0</string>
+    <string name="login_your_account">Login your account</string>
+    <string name="don_t_have_an_account_yet_sign_up_here">Don\'t have an account yet? Sign Up here</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="phone_number">Phone number</string>
+    <string name="wraps">Wraps</string>
+    <string name="ribbons">Ribbons</string>
+    <string name="flowers">Flowers</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_cart">add to cart</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="my_orders">My Orders</string>
+    <string name="increse_quantity">Increse Quantity</string>
+    <string name="decrease_quantity">Decrease Quantity</string>
+    <string name="hello_there">Hello there</string>
+    <string name="anniversary">Anniversary</string>
+    <string name="birthday">Birthday</string>
+    <string name="customize_order">Customize Order</string>
+    <string name="wedding">Wedding</string>
+    <string name="anniversaries">Anniversaries</string>
+    <string name="customize_orders">Customize Order</string>
+    <string name="categories">Categories</string>
+    <string name="weddings">Weddings</string>
+    <string name="birthdays">Birthdays</string>
+    <string name="our_featured_products">Our Featured Products</string>
+    <string name="product_name">Product Name</string>
+    <string name="category_name">Category Name</string>
+    <string name="new_password">New Password</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="back">Back</string>
+    <string name="all_products">All Products</string>
+    <string name="flower_stem">Flower Stem</string>
+    <string name="bouquet">Bouquet</string>
+    <string name="detailed_description_of_the_product_goes_here_it_includes_features_specifications_and_other_details">Detailed description of the product goes here. It includes features, specifications, and other details.</string>
+    <string name="product_image">Product Image</string>
+    <string name="_199_99">$199.99</string>
+    <string name="category">Category</string>
+    <string name="product_title">Product Title</string>
+    <string name="reviews">Reviews</string>
+    <string name="place_order">Place Order</string>
+    <string name="choose_time">Choose Time</string>
+    <string name="select_time">Select Time:</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="select_delivery_date">Select Delivery Date</string>
+    <string name="pick_delivery_date">Pick Delivery Date</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="pick_delivery_time">Pick Delivery Time</string>
+    <string name="gcash">GCash</string>
+    <string name="upload_receipt">Upload Receipt</string>
+    <string name="cash">Cash</string>
+    <string name="add_address">Add Address</string>
+    <string name="confirm_bouquet">Confirm Bouquet</string>
+    <string name="price_p0_00">Price: P0.00</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="total_price">Total Price</string>
+
+
+    <!-- Add categories for the Spinner -->
+    <string-array name="product_categories">
+        <item>Romantic</item>
+        <item>Celebrations</item>
+        <item>Gratitude</item>
+
+    </string-array>
+</resources>

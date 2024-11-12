@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".views.CheckoutActivity">
+
+    <!-- AppBar Layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/checkoutToolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Confirm Order"
+            app:titleTextColor="@color/colorPrimary"
+            app:navigationIcon="@drawable/ic_left_arrow"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content ScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Order Summary Section -->
+            <TextView
+                android:id="@+id/orderSummaryText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Summary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Replaced RecyclerView with ImageView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/ImageViewCustomizedImage1"
+                    android:layout_width="172dp"
+                    android:layout_height="115dp"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Order Summary Image"
+                    android:src="@drawable/womanboquet" />
+
+                <!-- Three TextViews on the right side -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="quantity"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_custom_prodname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="txt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_custom_totalprice"
+                        android:layout_width="match_parent"
+                        android:textSize="25sp"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Delivery Details Section -->
+            <TextView
+                android:id="@+id/deliveryDetailsText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Delivery Date Picker -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/selectedDateTextView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_delivery_date"
+                    android:textSize="16sp"
+                    android:hint="Delivery Date"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg" />
+
+                <ImageButton
+                    android:id="@+id/datePickerButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_calendar"
+                    android:contentDescription="@string/pick_delivery_date" />
+            </LinearLayout>
+
+            <!-- Delivery Time with ImageButton -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/timeInputLayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/delivery_time"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/timeInput1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="HH:MM"
+                        android:inputType="time" />
+
+                    <ImageButton
+                        android:id="@+id/timePickerButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_clock"
+                        android:contentDescription="@string/pick_delivery_time" />
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Delivery Address Section -->
+            <TextView
+                android:id="@+id/deliveryAddressText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Delivery Information"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/addressSpinner1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="16dp"
+                    android:minHeight="48dp" />
+
+                <Button
+                    android:id="@+id/addAddressButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttonBackground"
+                    android:text="@string/add_address"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Mode of Payment Section -->
+            <TextView
+                android:id="@+id/paymentMethodText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode of Payment"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/paymentMethodRadioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cashRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:tag="Cash"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash" />
+
+                <RadioButton
+                    android:id="@+id/gcashRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gcash"
+                    android:tag="Gcash"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+
+            <!-- Upload Receipt Section (Only for GCash) -->
+            <LinearLayout
+                android:id="@+id/uploadReceiptLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/uploadReceiptText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload GCash Receipt"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/uploadReceiptButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Receipt" />
+
+                <ImageView
+                    android:id="@+id/receiptImageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Receipt Image"
+                    android:background="@drawable/edittext_background"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Proceed to Payment Button -->
+            <Button
+                android:id="@+id/checkoutProceedButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed to Payment"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

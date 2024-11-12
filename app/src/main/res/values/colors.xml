@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+    <color name="colorPrimary">#FF88A5</color> <!-- Light Pink -->
+    <color name="colorPrimaryDark">#E87C9A</color> <!-- Darker Pink -->
+    <color name="colorAccent">#FF617B</color> <!-- Bright Pink/Red Accent -->
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#FFF0F5</color> <!-- Light Pinkish White -->
+    <color name="secondaryBackground">#FFE3EB</color> <!-- Slightly Darker Light Pink -->
+    <color name="lightPink">#F8E3E8</color> <!-- Slightly Darker Light Pink -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#333333</color> <!-- Dark Gray for text -->
+    <color name="textSecondary">#666666</color> <!-- Lighter Gray for secondary text -->
+    <color name="textHighlight">#FF88A5</color> <!-- Same as primary for text highlights -->
+
+    <!-- Button Colors -->
+    <color name="buttonBackground">#FF617B</color> <!-- Pinkish Red for buttons -->
+    <color name="buttonText">#FFFFFF</color> <!-- White for button text -->
+
+    <!-- Card and Elements Colors -->
+    <color name="cardBackground">#FFFFFF</color> <!-- White for card backgrounds -->
+    <color name="offerBannerBackground">#FFE3EB</color> <!-- Light Pink background for offer banners -->
+
+    <!-- Icon Colors -->
+    <color name="iconColor">#FF617B</color> <!-- Pinkish Red for icons -->
+    <color name="iconBackground">#FFF0F5</color> <!-- Light pink for icon backgrounds -->
+
+    <!-- Price and Highlights -->
+    <color name="priceColor">#FF4B4B</color> <!-- Bright Red for price details -->
+    <color name="highlightColor">#FF88A5</color> <!-- Pink for special highlights -->
+
+    <!-- Tag Colors -->
+    <color name="tagBackground">#F4F4F4</color> <!-- Light Gray for tag backgrounds -->
+    <color name="tagText">#FF617B</color> <!-- Pinkish Red for tag text -->
+</resources>

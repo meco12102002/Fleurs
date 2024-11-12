@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Image Preview -->
+    <ImageView
+        android:id="@+id/imagePreview123"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flower" />
+
+    <!-- Image Upload Button -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image" />
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/editProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/editProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="numberDecimal" />
+
+    <!-- Product Description -->
+    <EditText
+        android:id="@+id/editProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Description"
+        android:inputType="textMultiLine" />
+
+    <!-- Category (Checkboxes) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category(s)"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxRomantic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Romantic" />
+
+    <CheckBox
+        android:id="@+id/checkboxWeddings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weddings" />
+
+    <CheckBox
+        android:id="@+id/checkboxAnniversaries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anniversaries" />
+
+    <CheckBox
+        android:id="@+id/checkboxBirthdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdays" />
+
+    <!-- Stock -->
+    <EditText
+        android:id="@+id/editProductStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stock"
+        android:inputType="number" />
+
+    <!-- Save Product Button -->
+    <Button
+        android:id="@+id/btnSaveProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Product"
+        android:layout_gravity="end" />
+
+</LinearLayout>

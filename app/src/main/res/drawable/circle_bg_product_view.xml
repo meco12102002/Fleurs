@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/> <!-- Change to desired color -->
+    <corners android:radius="25dp"/> <!-- Adjust to half the width/height of the FrameLayout -->
+    <padding android:top="2dp" android:right="2dp" android:left="2dp" android:bottom="2dp"/> <!-- Optional padding -->
+</shape>

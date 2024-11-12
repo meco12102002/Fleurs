@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "594671060863",
+    "firebase_url": "https://fleurs-1be09-default-rtdb.firebaseio.com",
+    "project_id": "fleurs-1be09",
+    "storage_bucket": "fleurs-1be09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594671060863:android:331d621b9c5d776c2abc4a",
+        "android_client_info": {
+          "package_name": "com.example.fleursonthego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594671060863-1ardk589v8f52hlj65eahk55oq3iop4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fleursonthego",
+            "certificate_hash": "96be7807df4134b5531c0350aa9ec22426efc9b6"
+          }
+        },
+        {
+          "client_id": "594671060863-dtm28b8jeelnkupkre0rqcgi7d80iepb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmb73wDHG0P_pIFxNKpAKLiZ33QbC9Z9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594671060863-dtm28b8jeelnkupkre0rqcgi7d80iepb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

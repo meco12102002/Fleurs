@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_flowers"
+        android:title="Flowers" />
+    <item
+        android:id="@+id/nav_wraps"
+        android:title="Wraps" />
+    <item
+        android:id="@+id/nav_ribbons"
+        android:title="Ribbons" />
+</menu>

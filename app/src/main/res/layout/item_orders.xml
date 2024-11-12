@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Order Name and Delivery Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/orderName1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Customer Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/orderDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Date"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Order ID -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/orderId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Order ID: 123456"
+            android:textSize="14sp" />
+
+        <!-- Delivery Rider Name -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deliveryRiderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <!-- Delivery Rider Phone Number -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deliveryRiderPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <!-- Payment Method -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/paymentMethod1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <!-- Delivery Details -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/deliveryDetails1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Delivery Details: Home address, 3rd floor"
+            android:textSize="14sp" />
+
+        <!-- Order Status -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/orderStatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Order Status"
+            android:textSize="14sp"
+            android:textColor="#FF6347"
+            android:padding="8dp"
+            android:background="@drawable/chip_background"
+            app:chipCornerRadius="16dp" />
+
+        <!-- Total Price -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total Price: $50.00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Nested RecyclerView for Items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemsRecyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Buttons Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContactSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Seller"
+                style="?attr/materialButtonOutlinedStyle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonBackground"
+                android:text="Cancel Order"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Rate this order button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRateOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center"
+            android:text="Rate this order!"
+            android:textColor="@color/priceColor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
